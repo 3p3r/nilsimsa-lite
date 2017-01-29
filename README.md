@@ -47,5 +47,5 @@ nilsimsa_compute(data, data_size, hash);
  > compares two given Nilsimsa hashes. Returns a score between -127 and 128 where -127 means completely uncorrelated data and 128 means same data.
 
 ## Notes
-This is a minimal port of [rholder/nilsimsa](*%20https://github.com/rholder/nilsimsa) to C.
+This is a minimal port of [rholder/nilsimsa](https://github.com/rholder/nilsimsa) to C.
 The reference C implementation can be found [here](http://ixazon.dynip.com/~cmeclax/nilsimsa.html).
