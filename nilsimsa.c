@@ -44,7 +44,7 @@ void nilsimsa_compute(const char* data, int n, char* out)
     int digest[DIGEST_LENGTH] = { 0 };
     int window[WINDOW_LENGTH] = { -1, -1, -1, -1 };
 
-    for (auto i = 0; i < n; ++i)
+    for (int i = 0; i < n; ++i)
     {
         int ch = data[i] & 0xFF;
 
@@ -200,7 +200,7 @@ static int __tran3(int a, int b, int c, int n)
 
 static int __hexchar_to_int(char digit)
 {
-    return ((digit | 432) * 239'217'992 & 0xffff'ffff) >> 28;
+    return ((digit | 432) * 239217992 & 0xffffffff) >> 28;
 }
 
 static const char* __int_to_hexchar(int num)
